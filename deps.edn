@@ -1,0 +1,12 @@
+{:deps
+ {org.clojure/clojure       {:mvn/version "1.10.2"}
+  org.clojure/clojurescript {:mvn/version "1.11.4"}}
+
+ :aliases
+ {:dev     {:extra-paths ["dev"]}
+  :test    {:extra-paths ["test"]
+            :extra-deps  {io.github.cognitect-labs/test-runner {:git/tag "v0.5.0" :git/sha "b3fd0d2"}
+                          org.clojure/core.async               {:mvn/version "0.4.474"}
+                          clj-kondo/clj-kondo                  {:mvn/version "2022.02.09"}}
+            :main-opts   ["-m" "cognitect.test-runner"]
+            :exec-fn cognitect.test-runner.api/test}}}

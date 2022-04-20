@@ -12,3 +12,9 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+.env
+.calva
+.cache
+node_modules
+.nrepl-port
+.clj-kondo
